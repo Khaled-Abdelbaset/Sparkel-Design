@@ -424,6 +424,12 @@ html body nav .container .row .logo span {
   opacity: 0;
 }
 
+html body nav .container .row .logo span span {
+  line-height: 2;
+  font-size: 30px;
+  color: red;
+}
+
 html body nav .container .row .nav-links {
   position: relative;
   cursor: pointer;
@@ -870,7 +876,7 @@ html body .portfolio .container-fluid .row .gallery figure:hover figcaption {
 }
 
 @media (max-width: 991px) {
-  html body .portfolio .container-fluid .row .gallery figure figcaption {
+  html body .portfolio .container-fluid .row figure figcaption {
     left: 30%;
     width: 40%;
   }
@@ -925,6 +931,21 @@ html body .portfolio .container-fluid .row .video:hover img {
   transform: scale(1);
 }
 
+@media (max-width: 577px) {
+  html body .portfolio .container-fluid .row figure {
+    max-width: 100% !important;
+  }
+  html body .portfolio .container-fluid .row figure figcaption {
+    left: 20%;
+    width: 60%;
+  }
+  html body .portfolio .container-fluid .row .video button {
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    font-size: 12px;
+  }
+}
+
 html body .our-team .container .row .team {
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -942,6 +963,13 @@ html body .our-team .container .row .team {
 
 html body .our-team .container .row .team .card {
   padding: 15px;
+  -webkit-perspective: 800px;
+          perspective: 800px;
+}
+
+html body .our-team .container .row .team .card:hover .flip {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
 }
 
 html body .our-team .container .row .team .card .flip {
@@ -950,11 +978,6 @@ html body .our-team .container .row .team .card .flip {
   transition: 1s ease-in-out;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-}
-
-html body .our-team .container .row .team .card .flip:hover {
-  -webkit-transform: rotateY(-180deg);
-  transform: rotateY(-180deg);
 }
 
 html body .our-team .container .row .team .card .flip .info {
@@ -1019,6 +1042,12 @@ html body .our-team .container .row .team .card p {
   padding: 15px;
   color: #535353;
   font-size: 14px;
+}
+
+@media (max-width: 577px) {
+  html body .our-team .container .row .team .card {
+    width: 100% !important;
+  }
 }
 
 html body .testimonials .container-fluid {
@@ -1096,6 +1125,13 @@ html body .testimonials .container-fluid .container .row .qoutes .text h4 {
   }
 }
 
+@media (max-width: 577px) {
+  html body .testimonials .container-fluid .container .row .qoutes .dark,
+  html body .testimonials .container-fluid .container .row .qoutes .light {
+    width: 100% !important;
+  }
+}
+
 html body footer {
   background-color: #032027;
 }
@@ -1166,31 +1202,31 @@ html body footer .container .row .content .contact .mail {
   border-radius: 20px;
 }
 
-html body footer .container .row .content .contact div {
+html body footer .container .row .content .contact .social {
   text-align: center;
 }
 
-html body footer .container .row .content .contact div a {
+html body footer .container .row .content .contact .social a {
   padding: 10px;
 }
 
-html body footer .container .row .content .contact div a:nth-child(1) {
+html body footer .container .row .content .contact .social a:nth-child(1) {
   color: #00abee;
 }
 
-html body footer .container .row .content .contact div a:nth-child(2) {
+html body footer .container .row .content .contact .social a:nth-child(2) {
   color: #f5f5f5;
 }
 
-html body footer .container .row .content .contact div a:nth-child(3) {
+html body footer .container .row .content .contact .social a:nth-child(3) {
   color: #6ec9e0;
 }
 
-html body footer .container .row .content .contact div a:nth-child(4) {
+html body footer .container .row .content .contact .social a:nth-child(4) {
   color: #006fbf;
 }
 
-html body footer .container .row .content .contact div a:nth-child(5) {
+html body footer .container .row .content .contact .social a:nth-child(5) {
   color: #dd4b39;
 }
 
@@ -1200,6 +1236,15 @@ html body footer .container .row .content .contact div a:nth-child(5) {
     -webkit-box-pack: center !important;
         -ms-flex-pack: center !important;
             justify-content: center !important;
+  }
+}
+
+@media (max-width: 577px) {
+  html body footer .container .row .content .summary p,
+  html body footer .container .row .content .summary .social,
+  html body footer .container .row .content .contact p,
+  html body footer .container .row .content .contact .social {
+    width: 100% !important;
   }
 }
 
