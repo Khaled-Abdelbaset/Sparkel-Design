@@ -58,6 +58,11 @@ html {
               color: $mainColor;
               font-weight: bold;
               opacity: 0;
+              span {
+                line-height: 2;
+                font-size: 30px;
+                color: red;
+              }
             }
           }
           .nav-links {
@@ -457,12 +462,12 @@ html {
                 }
               } 
             }
-            @media (max-width: 991px) {
-              figure {
-                figcaption {
-                  left: 30%;
-                  width: 40%;
-                }
+          }
+          @media (max-width: 991px) {
+            figure {
+              figcaption {
+                left: 30%;
+                width: 40%;
               }
             }
           }
@@ -506,6 +511,22 @@ html {
                 @extend %main-transition;
                 transition-delay: 2s;
                 @include scale(1);
+              }
+            }
+          }
+          @media (max-width: 577px) {
+            figure {
+              max-width: 100% !important;
+              figcaption {
+                left: 20%;
+                width: 60%;
+              }
+            }
+            .video {
+              button {
+                letter-spacing: 0px;
+                word-spacing: 0px;
+                font-size: 12px
               }
             }
           }
@@ -592,6 +613,11 @@ html {
                 font-size: 14px;
               }
             }
+            @media (max-width:577px) {
+              .card {
+                width: 100% !important;
+              }
+            }
           }
         }
       }
@@ -662,6 +688,12 @@ html {
                 .top,
                 .bottom {
                   display: none !important;
+                }
+              }
+              @media (max-width: 577px) {
+                .dark,
+                .light {
+                  width: 100% !important;
                 }
               }
             }
@@ -741,7 +773,7 @@ html {
                 padding: 8px;
                 @include b-radius(20px)
               }
-              div {
+              .social {
                 text-align: center;
                 a {
                   padding: 10px;
@@ -767,6 +799,15 @@ html {
               > div:not(.lnk) {
                 text-align: center;
                 justify-content: center !important;
+              }
+            }
+            @media (max-width: 577px) {
+              .summary,
+              .contact {
+                p,
+                .social {
+                  width: 100% !important;
+                }
               }
             }
           }
