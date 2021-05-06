@@ -1,0 +1,52 @@
+@import "_webkits";
+
+// nav:hover logo span=> hover
+@keyframes logo {
+  0% {
+    // transform: scale(0);
+    @include scale(0);
+    opacity: .5;
+  }
+  100% {
+    transform-origin: left center;
+    opacity: 1;
+    text-shadow: 0 0 3px $mainColor;
+  }  
+}
+
+// Header => h1
+@keyframes shadow  {
+  0% {
+    text-shadow: 0 0 5px $mainColor;
+  }
+}
+
+// Header => Button
+@keyframes main-head {
+  0% {
+    opacity: 0;
+    margin-bottom: 300%;
+    @include scale(3);
+  }
+  50% {
+    margin: 0;
+    opacity: 0;
+    @include scale(.5);
+  } 
+  70% {
+    box-shadow: 0 0 100px 20px #ddc700ad;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// Header More => a
+@keyframes arrow {
+  0% {
+    margin-bottom:5px;
+  }
+  100% {
+    margin-top:5px;
+  }
+}

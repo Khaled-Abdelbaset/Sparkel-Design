@@ -1,0 +1,39 @@
+@mixin scale($s) {
+  -webkit-transform: scale($s);
+  -moz-transform: scale($s);
+  -ms-transform: scale($s);
+  -o-transform: scale($s);
+  transform: scale($s);
+}
+
+@mixin rotateY($ry) {
+  -webkit-transform: rotateY($ry);
+  -moz-transform: rotateY($ry);
+  -ms-transform: rotateY($ry);
+  -o-transform: rotateY($ry);
+  transform: rotateY($ry);
+}
+
+@mixin rotateX($rx) {
+  -webkit-transform: rotateX($rx);
+  -moz-transform: rotateX($rx);
+  -ms-transform: rotateX($rx);
+  -o-transform: rotateX($rx);
+  transform: rotateX($rx);
+}
+
+@mixin translate($x, $y) {
+  -webkit-transform: translate($x, $y);
+  -moz-transform: translate($x, $y);
+  -ms-transform: translate($x, $y);
+  -o-transform: translate($x, $y);
+  transform: translate($x, $y);
+}
+
+@mixin b-radius($t) {
+  -webkit-border-radius :($t) ;
+  -moz-border-radius :($t) ;
+  -ms-border-radius :($t) ;
+  -o-border-radius :($t) ;
+  border-radius :($t) ;
+}

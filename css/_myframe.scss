@@ -1,0 +1,88 @@
+// Responsive Screens
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: $mainPadding;
+  padding-left: $mainPadding;
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-flow: wrap;
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: 100% / ( 12 / $i);
+  }
+}
+
+// Extra Small Screen
+@media (max-width:767px) { 
+  @for $i from 1 through 12 {
+    .col-xs-#{$i} {
+      width: 100% / ( 12 / $i);
+    }
+  }
+}
+
+// Small Screen
+@media (min-width:768px) {
+  .container {
+    width: 750px;
+  }
+  @for $i from 1 through 12 {
+    .col-sm-#{$i} {
+      width: 100% / ( 12 / $i);
+    }
+  }  
+}
+
+// Medium Screen
+@media (min-width:992px){
+  .container {
+    width: 970px;
+  }
+  @for $i from 1 through 12 {
+    .col-md-#{$i} {
+      width: 100% / ( 12 / $i);
+    }
+  }
+}
+
+// Large Screen
+@media (min-width:1200px) {
+  .container {
+    width: 1170px;
+  }
+  @for $i from 1 through 12 {
+    .col-lg-#{$i} {
+      width: 100% / ( 12 / $i);
+    }
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.center {
+  text-align: center;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+img {
+  vertical-align: middle;
+}
