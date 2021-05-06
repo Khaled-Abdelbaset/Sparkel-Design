@@ -528,13 +528,16 @@ html {
             margin-bottom: $sectionMargin;
             .card {
               padding: $mainPadding;
+              perspective: 800px;
+              &:hover {
+                .flip {
+                  @include rotateY(-180deg);
+                }
+              }
               .flip {
                 position: relative;
                 transition: 1s ease-in-out;
                 transform-style: preserve-3d;
-                &:hover {
-                  @include rotateY(-180deg);
-                }
                 .info {
                   position: absolute;
                   height: 100%;
