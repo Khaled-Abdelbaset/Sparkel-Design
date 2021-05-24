@@ -499,6 +499,12 @@ html {
                 z-index: 5;
               }
             }
+            &:hover {
+              img {
+                @extend %main-transition;
+                @include scale(1);
+              }
+            }
             button {
               @extend %p-centering;
               letter-spacing: 5px;
@@ -508,13 +514,6 @@ html {
               background-color: transparent;
               border: 2px solid $mainColor;
               z-index: 10;
-            }
-            &:hover {
-              img {
-                @extend %main-transition;
-                transition-delay: 2s;
-                @include scale(1);
-              }
             }
           }
           @media (max-width: 577px) {
