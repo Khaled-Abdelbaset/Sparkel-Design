@@ -169,6 +169,9 @@ html {
             p {
               color: #afafaf;
               margin-bottom: $mainMargin;
+              &::selection {
+                color: #5c5c5c;
+              }
             }
             .btn {
               button {
