@@ -875,8 +875,8 @@ html body .portfolio .container-fluid .row .gallery figure:hover figcaption {
   }
 }
 
-@media (max-width: 991px) {
-  html body .portfolio .container-fluid .row figure figcaption {
+@media (min-width: 768px) and (max-width: 991px) {
+  html body .portfolio .container-fluid .row .gallery figure figcaption {
     left: 30%;
     width: 40%;
   }
@@ -1084,6 +1084,7 @@ html body .testimonials .container-fluid .container .row .qoutes .light .bottom 
   -webkit-box-shadow: 0 0 10px 2px #808080;
           box-shadow: 0 0 10px 2px #808080;
   height: 65%;
+  width: 100%;
 }
 
 html body .testimonials .container-fluid .container .row .qoutes .light .bottom img {
@@ -1245,6 +1246,9 @@ html body footer .container .row .content .contact .social a:nth-child(5) {
   html body footer .container .row .content .contact p,
   html body footer .container .row .content .contact .social {
     width: 100% !important;
+  }
+  html body footer .container .row .content .summary figure {
+    padding-left: 0;
   }
 }
 
