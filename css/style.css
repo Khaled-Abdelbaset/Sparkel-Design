@@ -586,8 +586,9 @@ html body header .container .row .more a {
 }
 
 html body .sec {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #E0EAFC), to(#afc9ee));
-  background-image: linear-gradient(to right, #E0EAFC 50%, #afc9ee 100%);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #E0EAFC), to(#c9dcf7));
+  background-image: linear-gradient(to right, #E0EAFC 50%, #c9dcf7 100%);
+  background-color: #f5f5f5;
 }
 
 html body .sec .row {
@@ -922,6 +923,11 @@ html body .portfolio .container-fluid .row .video figure::before {
   z-index: 5;
 }
 
+html body .portfolio .container-fluid .row .video:hover img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
 html body .portfolio .container-fluid .row .video button {
   letter-spacing: 5px;
   word-spacing: 10px;
@@ -930,13 +936,6 @@ html body .portfolio .container-fluid .row .video button {
   background-color: transparent;
   border: 2px solid #e1e506;
   z-index: 10;
-}
-
-html body .portfolio .container-fluid .row .video:hover img {
-  -webkit-transition-delay: 2s;
-          transition-delay: 2s;
-  -webkit-transform: scale(1);
-  transform: scale(1);
 }
 
 @media (max-width: 577px) {
@@ -1163,6 +1162,10 @@ html body footer .container .row .content > div p {
 
 html body footer .container .row .content .summary figure {
   padding-left: 30px;
+}
+
+html body footer .container .row .content .summary figure img {
+  border: 2px solid #e1e506;
 }
 
 html body footer .container .row .content .summary p {
