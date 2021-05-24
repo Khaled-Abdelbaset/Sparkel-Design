@@ -552,6 +552,14 @@ html body header .container .row .title p {
   margin-bottom: 15px;
 }
 
+html body header .container .row .title p::-moz-selection {
+  color: #5c5c5c;
+}
+
+html body header .container .row .title p::selection {
+  color: #5c5c5c;
+}
+
 html body header .container .row .title .btn button {
   -webkit-animation: main-head 4s ease-in-out;
           animation: main-head 4s ease-in-out;
