@@ -128,7 +128,7 @@ html {
                   display: block;
                   padding: $mainPadding;
                   color: $mainColor;
-                  @extend %main-transition; 
+                  @extend %main-transition;
                   &:hover {
                     @include scale(1.2);
                     transform-origin: right;
@@ -164,7 +164,7 @@ html {
               animation: shadow 1500ms infinite ease-in-out alternate;
               @media (max-width:767px) {
                 font-size: 1.5em;
-              } 
+              }
             }
             p {
               color: #afafaf;
@@ -178,7 +178,7 @@ html {
                 animation: main-head 4s ease-in-out;
               }
             }
-          }  
+          }
           .more {
             position: absolute;
             top: 100%;
@@ -310,7 +310,7 @@ html {
                       height: 25px;
                       border: 3px solid $mainColor;
                       @include b-radius(50%);
-                      @extend %flex-centering;                      
+                      @extend %flex-centering;
                       font-family: 'Original Surfer', cursive;
                     }
                   }
@@ -327,36 +327,34 @@ html {
     .progress {
       background-color: #000;
       .container {
-        .row {
-          .content {
-            @extend %flex-feat;
-            justify-content: space-around;
-            margin-top: $sectionMargin;
-            margin-bottom: $sectionMargin;
-            > div {
-              padding: $mainPadding;
+        .content {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+          margin-top: $sectionMargin;
+          margin-bottom: $sectionMargin;
+          > div {
+            padding: $mainPadding;
+          }
+          .done {
+            @extend %main-transition;
+            &:hover {
+              @include scale(.95);
             }
-            .done {
-              @extend %main-transition;
-              &:hover {
-                @include scale(.95);
+            .item {
+              box-shadow: 0 0 5px 5px #5f5e5ecc;
+              padding: $mainPadding;
+              background-image: linear-gradient(to top, #E7E7E7 50%, #FFF 100%);
+              @media (min-width: 1200px) {
+                margin-bottom: 0;
               }
-              .item {
-                box-shadow: 0 0 5px 5px #5f5e5ecc;
-                padding: $mainPadding;
-                background-image: linear-gradient(to top, #E7E7E7 50%, #FFF 100%);
-                @media (min-width: 1200px) {
-                  margin-bottom: 0;
-                }
-                span {
-                  font-weight: bold;
-                  font-family: 'Original Surfer', cursive;
-                }
-                p {
-                  font-weight: bold;
-                  letter-spacing: 2px;
-                  padding-top: 5px;
-                }
+              span {
+                font-weight: bold;
+                font-family: 'Original Surfer', cursive;
+              }
+              p {
+                font-weight: bold;
+                letter-spacing: 2px;
+                padding-top: 5px;
               }
             }
           }
@@ -464,7 +462,7 @@ html {
                   box-shadow: none;
                   max-width: 100%;
                 }
-              } 
+              }
             }
             @media (min-width:768px) and (max-width: 991px) {
               figure {
@@ -589,7 +587,7 @@ html {
                       color: #1DA1F2;
                     }
                   }
-                }  
+                }
                 figure {
                   backface-visibility: hidden;
                   position: relative;
@@ -835,7 +833,6 @@ html {
 
 %flex-centering {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
