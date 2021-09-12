@@ -732,23 +732,25 @@ html body .progress {
   background-color: #000;
 }
 
-html body .progress .container .row .content {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+html body .progress .container .content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   margin-top: 70px;
   margin-bottom: 70px;
 }
 
-html body .progress .container .row .content > div {
+html body .progress .container .content > div {
   padding: 15px;
 }
 
-html body .progress .container .row .content .done:hover {
+html body .progress .container .content .done:hover {
   -webkit-transform: scale(0.95);
   transform: scale(0.95);
 }
 
-html body .progress .container .row .content .done .item {
+html body .progress .container .content .done .item {
   -webkit-box-shadow: 0 0 5px 5px #5f5e5ecc;
           box-shadow: 0 0 5px 5px #5f5e5ecc;
   padding: 15px;
@@ -757,17 +759,17 @@ html body .progress .container .row .content .done .item {
 }
 
 @media (min-width: 1200px) {
-  html body .progress .container .row .content .done .item {
+  html body .progress .container .content .done .item {
     margin-bottom: 0;
   }
 }
 
-html body .progress .container .row .content .done .item span {
+html body .progress .container .content .done .item span {
   font-weight: bold;
   font-family: 'Original Surfer', cursive;
 }
 
-html body .progress .container .row .content .done .item p {
+html body .progress .container .content .done .item p {
   font-weight: bold;
   letter-spacing: 2px;
   padding-top: 5px;
@@ -1263,7 +1265,7 @@ html body footer .container .row .content .contact .social a:nth-child(5) {
   }
 }
 
-html body nav .container .row .nav-links .icon, html body header .container .row .more, html body .services .container .row .service-list, html body .services .container .row .service-list .item .info, html body .progress .container .row .content, html body .portfolio .container .row .items div, html body .our-team .container .row .team, html body .testimonials .container-fluid .container .row .qoutes, html body footer .container .row .content, html body footer .container .row .content > div {
+html body nav .container .row .nav-links .icon, html body header .container .row .more, html body .services .container .row .service-list, html body .services .container .row .service-list .item .info, html body .portfolio .container .row .items div, html body .our-team .container .row .team, html body .testimonials .container-fluid .container .row .qoutes, html body footer .container .row .content, html body footer .container .row .content > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1275,8 +1277,6 @@ html body nav .container .row .logo, html body .services .container .row .servic
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1306,7 +1306,7 @@ html body .services .container .row .service-list .item .info h3, html body .ser
   text-transform: uppercase;
 }
 
-html body nav .container .row .nav-links .icon, html body nav .container .row .nav-links ul, html body nav .container .row .nav-links ul li a, html body .services .container .row .service-list .item .skills, html body .progress .container .row .content .done, html body .portfolio .container-fluid .row .gallery figure figcaption, html body .portfolio .container-fluid .row .video:hover img, html body footer .container .row .content .lnk ul li a, .btn button {
+html body nav .container .row .nav-links .icon, html body nav .container .row .nav-links ul, html body nav .container .row .nav-links ul li a, html body .services .container .row .service-list .item .skills, html body .progress .container .content .done, html body .portfolio .container-fluid .row .gallery figure figcaption, html body .portfolio .container-fluid .row .video:hover img, html body footer .container .row .content .lnk ul li a, .btn button {
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
