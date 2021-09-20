@@ -1,3 +1,1 @@
-# Graduation
-Elzero Graduation Project 
-Design Using HTLM And CSS(scss).
+Design Using HTML & CSS(sass).
