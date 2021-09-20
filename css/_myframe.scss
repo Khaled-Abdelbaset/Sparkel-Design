@@ -10,12 +10,6 @@
   width: 100%;
 }
 
-@for $i from 1 through 12 {
-  .col-#{$i} {
-    width: 100% / ( 12 / $i);
-  }
-}
-
 // Small Screen
 @media (min-width:768px) {
   .container {
@@ -43,10 +37,6 @@ ul {
 
 a {
   text-decoration: none;
-}
-
-.center {
-  text-align: center;
 }
 
 button {
