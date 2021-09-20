@@ -10,23 +10,9 @@
   width: 100%;
 }
 
-.row {
-  display: flex;
-  flex-flow: wrap;
-}
-
 @for $i from 1 through 12 {
   .col-#{$i} {
     width: 100% / ( 12 / $i);
-  }
-}
-
-// Extra Small Screen
-@media (max-width:767px) { 
-  @for $i from 1 through 12 {
-    .col-xs-#{$i} {
-      width: 100% / ( 12 / $i);
-    }
   }
 }
 
@@ -35,11 +21,6 @@
   .container {
     width: 750px;
   }
-  @for $i from 1 through 12 {
-    .col-sm-#{$i} {
-      width: 100% / ( 12 / $i);
-    }
-  }  
 }
 
 // Medium Screen
@@ -47,22 +28,12 @@
   .container {
     width: 970px;
   }
-  @for $i from 1 through 12 {
-    .col-md-#{$i} {
-      width: 100% / ( 12 / $i);
-    }
-  }
 }
 
 // Large Screen
 @media (min-width:1200px) {
   .container {
     width: 1170px;
-  }
-  @for $i from 1 through 12 {
-    .col-lg-#{$i} {
-      width: 100% / ( 12 / $i);
-    }
   }
 }
 
@@ -84,5 +55,6 @@ button {
 }
 
 img {
+  max-width: 100%;
   vertical-align: middle;
 }
