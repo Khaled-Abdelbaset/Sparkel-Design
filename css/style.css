@@ -521,14 +521,17 @@ section {
   gap: 25px 25px;
 }
 
+.progress .content .done {
+  padding: 15px;
+}
+
 .progress .content .done:hover {
   -webkit-transform: scale(0.95);
   transform: scale(0.95);
 }
 
 .progress .content .done .item {
-  -webkit-box-shadow: 0 0 5px 5px #5f5e5ecc;
-          box-shadow: 0 0 5px 5px #5f5e5ecc;
+  border-radius: 10px;
   padding: 15px;
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #e7e7e7), to(#fff));
   background-image: linear-gradient(to top, #e7e7e7 50%, #fff 100%);
@@ -717,7 +720,7 @@ section {
   transform: rotateY(180deg);
   border-radius: 20px 20px 0 0;
   padding: 15px;
-  background-image: linear-gradient(20deg, #e9d200 10%, #e1e506 100%);
+  background-image: linear-gradient(20deg, #d3d600 10%, #e1e506 100%);
 }
 
 .our-team .container .team .card .flip .info h3 {
@@ -759,8 +762,8 @@ section {
   left: 0;
   width: 100%;
   padding: 15px;
-  color: #6d6d6b;
-  background-color: #ffff00c5;
+  color: #3d3d02;
+  background-color: #b1b103;
   font-weight: bold;
 }
 
@@ -778,8 +781,8 @@ section {
 }
 
 .testimonials {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#e1e506), to(transparent));
-  background-image: linear-gradient(to bottom, #e1e506 0%, transparent 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #e1e50696), to(transparent));
+  background-image: linear-gradient(to bottom, #e1e50696 50%, transparent 100%);
 }
 
 .testimonials .qoutes {
