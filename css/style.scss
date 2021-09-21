@@ -1,4 +1,4 @@
-$mainColor: rgb(225, 229, 6);
+$mainColor: #e1e506;
 $secColor: #696969;
 $mainPadding: 15px;
 $mainMargin: 15px;
@@ -303,12 +303,13 @@ section {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 25px 25px;
     .done {
+      padding: $mainPadding;
       @extend %main-transition;
       &:hover {
         @include scale(0.95);
       }
       .item {
-        box-shadow: 0 0 5px 5px #5f5e5ecc;
+        border-radius: 10px;
         padding: $mainPadding;
         background-image: linear-gradient(to top, #e7e7e7 50%, #fff 100%);
         @media (min-width: 1200px) {
@@ -449,7 +450,7 @@ section {
             @include rotateY(180deg);
             @include b-radius(20px 20px 0 0);
             padding: $mainPadding;
-            background-image: linear-gradient( 20deg, #e9d200 10%, $mainColor 100%);
+            background-image: linear-gradient( 20deg, #d3d600 10%, $mainColor 100%);
             h3 {
               color: #867e7e;
               padding: 10px;
@@ -481,8 +482,8 @@ section {
               left: 0;
               width: 100%;
               padding: $mainPadding;
-              color: #6d6d6b;
-              background-color: #ffff00c5;
+              color: #3d3d02;
+              background-color: #b1b103;
               font-weight: bold;
             }
           }
@@ -503,7 +504,7 @@ section {
   }
 }
 .testimonials {
-  background-image: linear-gradient(to bottom, $mainColor 0%, transparent 100%);
+  background-image: linear-gradient(to bottom, #e1e50696 50%, transparent 100%);
   .qoutes {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
